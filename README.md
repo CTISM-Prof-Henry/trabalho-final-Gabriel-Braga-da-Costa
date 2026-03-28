@@ -12,7 +12,7 @@ O projeto deve ser publicado no **GitHub Pages** e apresentado em aula para o pr
 
 ## 📌 Checklist
 
-* [ ] meu site tem pelo menos um arquivo do tipo `.html` 
+* [x] meu site tem pelo menos um arquivo do tipo `.html` 
 * [ ] estou usando CSS externo, em um arquivo separado `.css`
 * [ ] estou usando Javascript externo, em um arquivo separado `.js`
 * [ ] os arquivos do meu site estão na pasta `site`
