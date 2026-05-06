@@ -110,6 +110,8 @@ figure{
 /*Titulo do card do filme*/
 .titulo-div{
     /*background-color: blueviolet;*/
+    border-bottom: rgb(0, 0, 0, 0.1) solid;
+    background-color: oklch(44.4% 0.177 26.899);
     display: flex;
     width: 600px;
     height: 10%;
@@ -117,20 +119,33 @@ figure{
     /*flex-direction: row;*/
     align-items: center;
     font-family: "Yu Gothic UI Semibold";
-    color: oklch(13% 0.028 261.692);
+    /*color: oklch(13% 0.028 261.692);*/
+    color: black;
     font-size: 28px;
+    /*opacity: 0.8;*/
+
+}
+
+.titulo-div:hover{
     opacity: 0.8;
+    /*text-decoration: underline;*/
+    /*color: darkred;*/
+    /*background: oklch(55.6% 0 0);*/
+    /*background-color: darkred;*/
+    color: white;
 }
 
 /*Tags do genero do filme*/
 .tag-li{
     /*background-color: darkred;*/
+    /*border-bottom: rgb(0, 0, 0, 0.2) solid;*/
     display: flex;
     justify-content: center;
     gap: 23px;
     margin: 0 0 0 0;
     color: oklch(13% 0.028 261.692);
-    opacity: 0.8;
+    background-color: oklch(44.2% 0.017 285.786);
+    /*opacity: 0.8;*/
     /*list-style-type: none;*/
     font-size: 15px;
     padding: 0;
@@ -169,10 +184,12 @@ h1{
 .sinopse {
     /*background-color: rosybrown;*/
     display: block;
+    /*border-bottom: rgb(0, 0, 0, 0.1) solid;*/
     overflow-y: hidden;
     overflow-x: hidden;
     width: 100%;
-    height: 285px;
+    height: 300px;
+    justify-content: end;
     box-sizing: border-box ; /*nao deixa o padding alterar a largura e coloca a descrição embaixo da sinopse*/
     padding: 12px;
 }
@@ -183,10 +200,11 @@ h1{
 
 .sinopse-titulo{
     /*background-color: blueviolet;*/
+    border-bottom: rgb(0, 0, 0, 0.1) solid;
     display: flex;
     justify-content: center;
     width: 100%; /*ocupa toda largura da classe lado direito*/
-    /*height: 45px;*/
+    height: 35px;
     text-align: center;
 }
 
@@ -204,6 +222,7 @@ h1{
     display: flex;
     flex-direction: column;
     width: 100%;
+    /*background-color: darkblue;*/
 
 }
 
@@ -220,12 +239,14 @@ h1{
     gap: 18px;
     align-items: center;
     height: 11%;
+    background-color: oklch(44.2% 0.017 285.786);
 }
 
 .rodape-img{
     width: 35px;
     height: 35px;
     border-radius: 50%;
+
 }
 
 .rodape-img:hover{
@@ -241,22 +262,49 @@ h1{
     margin-left: 25px;
 }
 
-.descricao-direito{
-    /*background-color: rosybrown;*/
-    gap: 18px;
-    height: 125px;
-    margin: 6px;
-}
+/*.descricao-direito{*/
+/*    !*background-color: rosybrown;*!*/
+/*    !*border-top: rgb(0, 0, 0, 0.1) solid;*!*/
+/*    !*border-bottom: rgb(0, 0, 0, 0.1) solid;*!*/
+/*    !*gap: 10px;*!*/
+/*    !*height: 125px;*!*/
+/*    !*margin: 6px;*!*/
+/*    !*padding: 6px;*!*/
+/*}*/
 
 .descricao-li{
     color: oklch(37.9% 0.146 265.522);
-    gap: 50px;
+    gap: 2px;
+    font-size: 11pt;
+    margin-left: 6px;
 }
 
 .descricao-li:hover{
     /*opacity: 0.9;*/
     text-decoration: underline;
     cursor: pointer;
+
+}
+
+.ficha-tecnica{
+    display: flex;
+    justify-content: flex-start;
+    /*gap: 2px;*/
+    /*background-color: orange;*/
+    width: 100%;
+    height: 45%;
+    align-items: center;
+    border-top: rgb(0, 0, 0, 0.1) solid;
+    /*padding-left: 6px;*/
+    /*margin-left: 6px;*/
+}
+
+.ficha{
+    /*display: flex;*/
+    /*background-color: darkblue;*/
+    border-bottom: rgb(0, 0, 0, 0.1) solid;
+    width: 100%;
+    height: 109px;
 }
 
 
