@@ -5,8 +5,8 @@
 }
 
 body{
-    /*background-color: oklch(21% 0.006 285.885);*/
-    background-color: oklch(27.4% 0.006 286.033);
+    background-color: oklch(21% 0.006 285.885);
+    /*background-color: oklch(14.1% 0.005 285.823);*/
 }
 
 /*Configuração do span da logo*/
@@ -51,7 +51,7 @@ nav{
 /*Configurações dos itens da lista*/
 .nav-list{
     display: flex; /* -> transforma em flexbox*/
-    color: slategray;
+    /*color: slategray;*/
     /*justify-content: space-between;*/
     list-style-type: none; /*tira os atributos/pontos de lista*/
     letter-spacing: 1px;
@@ -69,10 +69,10 @@ nav{
 /*configurações da div "caixa"*/
 .container{
     display: flex;
-    /*background: white;*/
+    background: white;
     /*align-items: center;*/
     justify-content: space-evenly;/*ajusta os itens na página*/
-    margin-top: 0;
+    margin: 0 0 50px 0;
 }
 
 /*configurações do que esta dentro da div "caixa*/
@@ -102,10 +102,6 @@ figure{
     /*margin: 0 0 0 0;*/
 
 }
-
-/*.img:hover{*/
-/*    opacity: 0.5;*/
-/*}*/
 
 /*Titulo do card do filme*/
 .titulo-div{
@@ -157,12 +153,10 @@ figure{
 /*Banner com as datas das temps*/
 .banner{
     /*background-color: beige;*/
-    /*background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);*/
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     height: 85px;
-    /*align-items: flex-start;*/
 }
 
 h3{
@@ -178,7 +172,6 @@ h1{
     /*color: black;*/
     font-size: 35px;
 }
-
 
 /*Div descrição filme*/
 .sinopse {
@@ -262,16 +255,7 @@ h1{
     margin-left: 25px;
 }
 
-/*.descricao-direito{*/
-/*    !*background-color: rosybrown;*!*/
-/*    !*border-top: rgb(0, 0, 0, 0.1) solid;*!*/
-/*    !*border-bottom: rgb(0, 0, 0, 0.1) solid;*!*/
-/*    !*gap: 10px;*!*/
-/*    !*height: 125px;*!*/
-/*    !*margin: 6px;*!*/
-/*    !*padding: 6px;*!*/
-/*}*/
-
+/*link dos nomes (diretor, atores)*/
 .descricao-li{
     color: oklch(37.9% 0.146 265.522);
     gap: 2px;
