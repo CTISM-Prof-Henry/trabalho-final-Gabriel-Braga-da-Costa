@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: oklch(14.5% 0 0);
+}
+
+/*BARRA INTEIRA DA NAV*/
+nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), oklch(14.5% 0 0) 100%);
+    height: 55px;
+    padding: 1px;
+
+}
+
+/*LISTA DA NAV*/
+nav ul{
+    display: flex; /*Coloca os itens da UL lado a lado*/
+
+}
+
+/*ITENS DA LISTA*/
+nav ul li{
+    list-style: none; /*tira os pontos dos itens da lista*/
+
+}
+
+/*LINKS DA LISTA*/
+nav ul li a{
+    opacity: 0.6;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    margin-left: 35px;
+}
+
+nav ul li a:hover{
+    opacity: 1;
+    color: white;
+
+}
+
+a span{
+    color: darkred;
+    margin-left: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+a span:hover{
+    color: white;
+    opacity: 0.9;
+}
+
+a{
+    font-size: 35px;
+    font-family: "Yu Gothic UI Semibold";
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    /*margin-left: 35px;*/
+    letter-spacing: 1px;
+
+}
+
+.banner{
+    display: flex;
+    height: 85px;
+    background-color: rosybrown;
+}
+
+.carrossel{
+    width: 70.5%;
+    overflow-x: auto; /*cria a barra de scroll dentro da pagina*/
+    display: flex;
+    gap: 1.5em;
+    margin: 2.5em auto; /*centraliza o carrosel*/
+    /*background-color: oklch(37% 0.013 285.805);*/
+    border-radius: 15px;
+    scroll-behavior: smooth;
+    anchor-name: --carrossel; /*define uma ancora*/
+    scroll-snap-type: x mandatory; /*pra qual lado o carrosel vai girar*/
+
+}
+
+/*esconde a barra de scroll que fica embaixo dos cards*/
+.carrossel::-webkit-scrollbar {
+    display: none;
+}
+
+/*cria o botão para mover o card*/
+.carrossel::scroll-button(right), .carrossel::scroll-button(left) {
+    content: '→';
+    border: none;
+    background-color: darkred;
+    font-size: 3rem;
+    color: white;
+    font-family: Consolas;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding-bottom: .1em; /*centralzia a seta*/
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --carrossel; /*posição que a ancora vai ter*/
+    position-area: right center; /*posição relativa a ancora*/
+    translate: -50%; /*posicao da seta*/
+
+}
+
+/*cria o botão para mover o card*/
+.carrossel::scroll-button(left) {
+    content: '←';
+    position-area: left center; /*posição relativa a ancora*/
+    translate: 50%; /*posicao da seta*/
+}
+
+.carrossel::scroll-button(right):disabled, .carrossel::scroll-button(left):disabled {
+    opacity: 0.5;
+    cursor: auto;
+}
+
+.card{
+    scroll-snap-align: start; /*força o começo no próximo card*/
+    flex: 0 0 20em;
+    /*height: 30em;*/
+    padding: 1em; /*1em = 16px*/
+    /*border-radius: 1em;*/
+    /*text-align: center; !*alinha no centro*!*/
+    align-content: center; /*alinha no meio*/
+    transform: translateY(10px);/*efeito de zoom no card*/
+
+}
+
+.card:hover{
+    transform: translateY(0); /*efeito de zoom no card*/
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.img1 img, .img2 img, .img3 img, .img4 img, .img5 img, .img6 img, .img7 img, .img8 img, .img9 img, .img10 img, .img11 img, .img12 img{
+    width: 100%;
+    display: flex;
+    border-radius: 4%;
+    opacity: 0.7;
+
+}
+
+.img1 img:hover, .img2 img:hover, .img3 img:hover, .img4 img:hover, .img5 img:hover, .img6 img:hover, .img7 img:hover, .img8 img:hover, .img9 img:hover, .img10 img:hover, .img11 img:hover, .img12 img:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+h2 a {
+    color: oklch(13% 0.028 261.692);
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    padding: 0 0 0 10px;
+    font-size: 25px;
+    background-color: blueviolet;
+
+}
+
+.banner-top-filmes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    /*align-items: center;*/
+    /*background-color: violet;*/
+    width: 83em;
+    height: 500px;
+    /*padding: 5em;*/
+    margin: 2.5em auto; /*centraliza no meio do site*/
+    /*gap: 30px;*/
+
+}
+
+h2{
+    /*background-color: blueviolet;*/
+    color: white;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    /*padding: 0 0 0 10px;*/
+
+}
+
+.cards-top-filmes{
+    /*background-color: darkgray;*/
+    display: flex;
+    justify-content: space-evenly;
+    width: 83em;
+    height: 500px;
+    gap: 10px;
+    align-items: center;
+    border-radius: .5%;
+
+}
+
+.card-filme{
+    display: flex;
+    background-color: darkgray;
+    display: flex;
+    width: 430px;
+    height: 370px;
+    border-radius: 4%;
+    justify-content: flex-start;
+    /*align-items: flex-start;*/
+}
+
+.card-filme img{
+    /*display: flex;*/
+    margin-left: 10px;
+    /*width: 50%;*/
+    height: 350px;
+    margin-top: 10px;
+}
+
+h3{
+    color: white;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    background-color: darkred;
+    margin-left: 15px;
+    margin-top: 10px;
+    height: 35px;
+    width: 50px;
+    text-align: center;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.carrossel .card .img{*/
+/*    background-image: url("./images/panico77.jpg");*/
+/*    background-position: center;*/
+/*    background-size: cover;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    display: flex;*/
+/*}*/
+
+
+
