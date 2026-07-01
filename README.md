@@ -14,13 +14,13 @@ O projeto deve ser publicado no **GitHub Pages** e apresentado em aula para o pr
 
 * [x] meu site tem pelo menos um arquivo do tipo `.html` 
 * [x] estou usando CSS externo, em um arquivo separado `.css`
-* [ ] estou usando Javascript externo, em um arquivo separado `.js`
+* [x] estou usando Javascript externo, em um arquivo separado `.js`
 * [x] os arquivos do meu site estão na pasta `site`
 * [x] a pasta `site` tem um arquivo `index.html`, que é a página inicial do meu site; sem esse arquivo, o GitHub Pages 
       não vai funcionar
 * [x] estou ciente que, se eu modificar ou excluir arquivos que não estejam na pasta `site` 
       (por exemplo, `.github` ou `README.md`), isso pode afetar o funcionamento do meu site
-* [ ] respondi todas as perguntas e preenchi todos os checkboxes abaixo
+* [x] respondi todas as perguntas e preenchi todos os checkboxes abaixo
 * [x] meu site está hospedado no GitHub Pages, no link `<escreva aqui o link do seu site>`
 
 ## 📖 Descrição do projeto
@@ -28,8 +28,11 @@ O projeto deve ser publicado no **GitHub Pages** e apresentado em aula para o pr
 Descreva abaixo **sobre o que se trata seu site:**
 
 - **Tema:**
+O tema do meu site é sobre filmes de terror, por isso escolhi uma temática mais "dark/sombrio", para que remetesse aos filmes/séries citados no site
 - **Público-alvo:**
+O público-alvo é para pessoas, que assim como eu, gostam deste estilo de filme e estão procurando novidades ou algo para assistir.
 - **Funcionalidades:**
+Serve como uma espécie de vitrine para os filmes, para que as pessoas possam entrar, ver as novidades, checar as notas, sinopses e assim decidir o que olhar.
 
 ## Uso de IA
 
@@ -63,9 +66,9 @@ Marque com `[x]` os elementos que **foram implementados no seu site**. Você nã
 - [x] `<nav>`
 - [x] `<main>`
 - [x] `<section>`
-- [ ] `<article>`
-- [ ] `<aside>`
-- [ ] `<footer>`
+- [x] `<article>`
+- [x] `<aside>`
+- [x] `<footer>`
 
 #### Conteúdo
 
@@ -80,7 +83,7 @@ Marque com `[x]` os elementos que **foram implementados no seu site**. Você nã
 #### Formulários
 
 - [ ] `<form>`
-- [ ] `<input>`
+- [x] `<input>`
 - [ ] `<label>`
 - [ ] `<textarea>`
 - [ ] `<button>`
@@ -89,24 +92,24 @@ Marque com `[x]` os elementos que **foram implementados no seu site**. Você nã
 
 - Seletor de...
   - [x] Classes (`.classe`)
-  - [ ] IDs (`#id`)
+  - [x] IDs (`#id`)
   - [x] pseudoclasse (`#a::hover`)
 - [x] Cores
 - [x] Tipografia (e.g. `font-family`)
 - [x] Margem e padding
 - [x] Layout com `flexbox`
 - [ ] Layout com `grid`
-- [ ] Responsividade (`media queries`)
-- [ ] Animações ou transições
+- [x] Responsividade (`media queries`)
+- [x] Animações ou transições
 
 ## ⚙️ JavaScript
 
-- [ ] Manipulação do DOM
-- [ ] Eventos (`click`, `submit`, etc.)
+- [x] Manipulação do DOM
+- [x] Eventos (`click`, `submit`, etc.)
 - [ ] Validação de formulário
-- [ ] Alteração dinâmica de conteúdo
-- [ ] Uso de funções
-- [ ] Uso de arrays ou objetos
+- [x] Alteração dinâmica de conteúdo
+- [x] Uso de funções
+- [x] Uso de arrays ou objetos
 - [ ] Uso de `fetch` ou API externa
 - [ ] local Storage
 
@@ -118,28 +121,58 @@ Descreva brevemente a organização dos arquivos do seu projeto.
 Exemplo:
 
 ```
-site/
-│
-├── index.html
-├── pages/
-│   ├── about.html
-│   └── contact.html
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   └── script.js
-│
-└── images/
-    ├── logo.png
-    └── banner.jpg
+site
+    ├───css
+    │   │   estilo.css
+    │   │   filmes.css
+    │   │   index.css
+    │   │   main.css
+    │   │   top_filmes.css
+    │   │   
+    │   └───images
+    │           alertaApocalipse.png
+    │           aMaldicaoHill.png
+    │           arquivo81.png
+    │           arquivoX.png
+    │           chernobyl.png
+    │           frioDaMorte.png
+    │           marianne.png
+    │           missaDaNoite.png
+    │           motherOfFlies.png
+    │           nightPatrol.png
+    │           oPrimata.png
+    │           osEstranhos.png
+    │           oSomDaMorte.png
+    │           panico7.png
+    │           paraSempreMedo.png
+    │           presencaOculta.png
+    │           sleepWalker.png
+    │           temploDosOssos.png
+    │           terrorSilentHill.png
+    │           weBuryDead.png
+    │           
+    ├───images
+    │       logoAppleTv.png
+    │       logoYt.png
+    │       
+    ├───js
+    │       index.js
+    │       series.js
+    │       
+    ├───pages
+    │       about.html
+    │       filmes.html
+    │       index.html
+    │       series.html
+    │       top_filmes.html
+    │       
+    └───Videos
 ```
 
 ## 💡 Observações
 
 Utilize este espaço para comentar:
 
-- dificuldades encontradas
-- decisões de design
-- melhorias que podem ser feitas no futuro
+- dificuldades encontradas: Minhas dificuldades envolveram as partes de design e layout no HTML (fazer com que tudo ficasse bem organizado)
+- decisões de design: Optei por um design mais minimalista e "dark" para tentar manter o sentimento de "terror/horror" que vem com os filmes desse estilo.
+- melhorias que podem ser feitas no futuro: Melhorias na organização do código, de layout, mais interatividade/responsividade, mais informações poderiam ser acrescentadas e lapidação do site como um todo.

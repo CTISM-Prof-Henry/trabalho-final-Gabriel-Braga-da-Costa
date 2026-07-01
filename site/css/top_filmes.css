@@ -1,0 +1,176 @@
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #f5c518;*/
+    width: 100%;
+    height: 150px;
+    font-size: 50px;
+    font-family: inherit;
+    color: white;
+}
+
+
+
+.div-filmes{
+    display: flex;
+    flex-direction: column;
+    border-radius:18px;
+    gap: 10px;
+    padding: 14px;
+    height: 5000px;
+    margin: 2.5em auto;
+    width: 80%;
+    background-color: dimgray;
+
+    .content-filmes{
+        display: flex;
+        flex-direction: column;
+        /*background-color: darkred;*/
+        width: 100%;
+        border-bottom: rgb(0, 0, 0, 0.1) solid;
+        height: 6.9%;
+        padding: 10px;
+
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            li{
+                list-style: none;
+
+            }
+        }
+
+        .mini-cards{
+            display: flex;
+            justify-content: space-between;
+
+            .left-img{
+                display: flex;
+                height: 300px;
+            }
+
+            figure{
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            img{
+                border-bottom-right-radius:14px;
+                border-bottom-left-radius:14px;
+                border-top-right-radius:14px;
+            }
+        }
+
+        .lado-direito{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 15px;
+        }
+    }
+}
+
+.ranking{
+    /*background: darkred;*/
+    /*color: darkred;*/
+    padding:4px 10px;
+    border-radius:8px;
+    font-size: 30px;
+    font-weight:bold;
+    display: flex;
+    margin-bottom:12px;
+    flex-direction: row;
+    width: 800px;
+
+    h2{
+        /*background-color: #f5c518;*/
+        display: flex;
+        justify-content: flex-start;
+        font-size: inherit;
+        align-items: center;
+        color: black;
+    }
+}
+
+.rating{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color:#f5c518;
+    font-size: inherit;
+    padding: inherit;
+
+}
+
+.info{
+    display:flex;
+    gap: 10px;
+    color:#b5b5b5;
+    margin-bottom:10px;
+    font-size:18px;
+    padding: inherit;
+    /*background-color: #b5b5b5;*/
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        li {
+            display: flex;
+            justify-content: flex-start;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+
+        }
+
+        .score1, .score2, .score3, .score4, .score5, .score6, .score7, .score8, .score9, .score10{
+            color: white;
+            width: 24px;
+            border-radius: 3px;
+            font-size: inherit;
+            font-family: inherit;
+            padding: inherit;
+
+
+            span{
+                display: flex;
+                align-items: center;
+                font-size: 13px;
+                gap: 5px;
+                padding-left: 5px ;
+                /*background-color: #f5c518;*/
+
+            }
+
+        }
+
+        .score1, .score4, .score9{
+            background-color: green;
+        }
+
+        .score2, .score5, .score8{
+            background-color: orange;
+        }
+
+        .score6, .score7, .score10{
+            background-color: red;
+        }
+    }
+}
+
+.descricao-card{
+    color: black;
+    line-height:1.3;
+    font-size: 15pt;
+    padding: inherit;
+}
+
+
+
+
+
+

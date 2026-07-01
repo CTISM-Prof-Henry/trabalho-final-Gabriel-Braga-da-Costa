@@ -1,81 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background-color: oklch(14.5% 0 0);
-}
-
-/*BARRA INTEIRA DA NAV*/
-nav{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), oklch(14.5% 0 0) 100%);
-    height: 55px;
-    padding: 1px;
-
-}
-
-/*LISTA DA NAV*/
-nav ul{
-    display: flex; /*Coloca os itens da UL lado a lado*/
-
-}
-
-/*ITENS DA LISTA*/
-nav ul li{
-    list-style: none; /*tira os pontos dos itens da lista*/
-
-}
-
-/*LINKS DA LISTA*/
-nav ul li a{
-    opacity: 0.6;
-    font-size: 16px;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    margin-left: 35px;
-}
-
-nav ul li a:hover{
-    opacity: 1;
-    color: white;
-
-}
-
-a span{
-    color: darkred;
-    margin-left: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-a span:hover{
-    color: white;
-    opacity: 0.9;
-}
-
-a{
-    font-size: 35px;
-    font-family: "Yu Gothic UI Semibold";
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
-    /*margin-left: 35px;*/
-    letter-spacing: 1px;
-
-}
-
-.banner{
-    display: flex;
-    height: 85px;
-    background-color: rosybrown;
-}
-
 .carrossel{
     width: 70.5%;
     overflow-x: auto; /*cria a barra de scroll dentro da pagina*/
@@ -127,7 +49,7 @@ a{
     cursor: auto;
 }
 
-.card{
+.card-content{
     scroll-snap-align: start; /*força o começo no próximo card*/
     flex: 0 0 20em;
     /*height: 30em;*/
@@ -139,7 +61,7 @@ a{
 
 }
 
-.card:hover{
+.card-content:hover{
     transform: translateY(0); /*efeito de zoom no card*/
     cursor: pointer;
     transition: all .5s;
@@ -168,107 +90,165 @@ h2 a {
 
 }
 
+
 .banner-top-filmes{
     display: flex;
-    justify-content: space-evenly;
+    /*justify-content: space-evenly;*/
     flex-direction: column;
-    /*align-items: center;*/
-    /*background-color: violet;*/
+    /*background-color: darkred;*/
     width: 83em;
     height: 500px;
     /*padding: 5em;*/
     margin: 2.5em auto; /*centraliza no meio do site*/
     /*gap: 30px;*/
 
+    .botao{
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 32px;
+        font-weight: bold;
+        transition: 0.3s;
+        /*background-color: #f5c518;*/
+        margin-bottom: 10px;
+        padding-left: 10px;
+
+
+    }
+
+    .botao::before{
+        content: "";
+        width: 5px;
+        height: 50px;
+        background-color: darkred;
+        border-radius: 10px;
+
+    }
+
+    .botao::after{
+        content: ">";
+        color: white;
+        transition: 0.3s;
+        font-size: 40px;
+
+    }
+
+    .botao:hover::after{
+        opacity: 0.8;
+        color: darkred;
+
+    }
+
 }
 
-h2{
-    /*background-color: blueviolet;*/
-    color: white;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    /*padding: 0 0 0 10px;*/
-
-}
-
-.cards-top-filmes{
-    /*background-color: darkgray;*/
+.cards-container{
     display: flex;
     justify-content: space-evenly;
-    width: 83em;
-    height: 500px;
-    gap: 10px;
-    align-items: center;
-    border-radius: .5%;
-
+    gap: 30px;
 }
 
-.card-filme{
-    display: flex;
-    background-color: darkgray;
-    display: flex;
-    width: 430px;
-    height: 370px;
-    border-radius: 4%;
-    justify-content: flex-start;
-    /*align-items: flex-start;*/
-}
+.card{
+    width:600px;
+    background: dimgray;
+    border-radius:18px;
+    padding:14px;
+    display:flex;
+    gap:20px;
+    color:white;
+    /*box-shadow:0 10px 30px rgba(0,0,0,0.5);*/
 
-.card-filme img{
-    /*display: flex;*/
-    margin-left: 10px;
-    /*width: 50%;*/
-    height: 350px;
-    margin-top: 10px;
-}
+        img{
+            width:240px;
+            height:345px;
+            border-radius:14px;
+        }
 
-h3{
-    color: white;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    font-size: 25px;
-    background-color: darkred;
-    margin-left: 15px;
-    margin-top: 10px;
-    height: 35px;
-    width: 50px;
-    text-align: center;
+        .content{
+            display:flex;
+            flex-direction:column;
+            justify-content:space-evenly;
+            padding: 5px;
+            /*background-color: #4ea1ff;*/
+        }
+
+        .ranking{
+            background: darkred;
+            color:white;
+            padding:4px 10px;
+            border-radius:8px;
+            font-weight:bold;
+            display:inline-block;
+            margin-bottom:12px;
+        }
+
+        h1{
+            font-size:30px;
+            margin-bottom:12px;
+            /*background-color: #e5e5e5;*/
+        }
+
+        .info{
+            display:flex;
+            gap:16px;
+            color:#b5b5b5;
+            margin-bottom:10px;
+            font-size:18px;
+            /*background-color: #b5b5b5;*/
+
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                li {
+                    display: flex;
+                    justify-content: flex-start;
+                    font-size: 15px;
+                    letter-spacing: 0.5px;
+
+                }
+
+                .score{
+                    background-color: green;
+                    color: white;
+                    width: 24px;
+                    border-radius: 3px;
+                    font-size: inherit;
+                    font-family: inherit;
+                    padding: 3px;
 
 
-}
+                    span{
+                        display: flex;
+                        align-items: center;
+                        font-size: 13px;
+                        gap: 5px;
+                        padding-left: 5px ;
+                        /*background-color: #f5c518;*/
+
+                    }
+                }
+            }
+        }
+
+        .rating{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            color:#f5c518;
+            font-size:18px;
+            margin-bottom:10px;
+
+        }
+
+        .descricao-card{
+            color:#e5e5e5;
+            line-height:1.3;
+            font-size: 15pt;
+        }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.carrossel .card .img{*/
-/*    background-image: url("./images/panico77.jpg");*/
-/*    background-position: center;*/
-/*    background-size: cover;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    display: flex;*/
-/*}*/
-
-
-
+    }

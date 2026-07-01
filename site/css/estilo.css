@@ -127,7 +127,7 @@ a{
     cursor: auto;
 }
 
-.card{
+.card-content{
     scroll-snap-align: start; /*força o começo no próximo card*/
     flex: 0 0 20em;
     /*height: 30em;*/
@@ -139,7 +139,7 @@ a{
 
 }
 
-.card:hover{
+.card-content:hover{
     transform: translateY(0); /*efeito de zoom no card*/
     cursor: pointer;
     transition: all .5s;
@@ -190,7 +190,7 @@ h2{
 
 }
 
-.cards-top-filmes{
+.card-content{
     /*background-color: darkgray;*/
     display: flex;
     justify-content: space-evenly;
@@ -202,7 +202,7 @@ h2{
 
 }
 
-.card-filme{
+.card-top{
     display: flex;
     background-color: darkgray;
     display: flex;
@@ -213,7 +213,7 @@ h2{
     /*align-items: flex-start;*/
 }
 
-.card-filme img{
+.card-top img{
     /*display: flex;*/
     margin-left: 10px;
     /*width: 50%;*/

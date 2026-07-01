@@ -1,207 +1,159 @@
-*{
-    margin: 0;
-    padding: 0;
+/************************************* CARD *************************************/
+.conteudo{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
+    gap:25px;
+    margin-bottom:30px;
+
+    min-height: 600px;
+    padding: 20px;
+
+    /*background-color: gray;*/
 }
 
-body{
-    background-color: oklch(21% 0.006 285.885);
-}
-
-nav{
+/************************************* CARD INDIVIDUAL *************************************/
+.itens{
     display: flex;
+    flex-direction: column;
+
+    width: 600px;
+    height: 100%;
+
+    background-color: dimgray;
+}
+
+/************************************* TITULO *************************************/
+.titulo{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), oklch(14.5% 0 0) 100%);
-    height: 55px;
-    padding: 1px;
 
-    ul{
-        display: flex;
+    font-size: 26px;
+    font-family: "Yu Gothic UI Semibold";
 
-        li{
-            list-style: none;
+    border-bottom: rgb(0, 0, 0, 0.1) solid;
 
-            a{
-                opacity: 0.6;
-                font-size: 16px;
-                font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-                margin-left: 35px;
-            }
+    width: 100%;
+    height: 10%;
 
-            a:hover{
-                color: white;
-                opacity: 1;
-            }
+    background-color: darkred;
 
+    color: oklch(13% 0.028 261.692);
+
+    &:hover{
+        color: white;
+        cursor: pointer;
+        transition: .4s;
+    }
+}
+
+/************************************* UL CATEGORIAS *************************************/
+.categorias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+
+    width: 100%;
+
+    padding: 5px;
+    gap: 25px;
+
+    background-color: oklch(44.2% 0.017 285.786);
+    color: oklch(13% 0.028 261.692);
+}
+
+/************************************* IMAGEM E DESCRIÇÃO *************************************/
+.conteudo-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+/************************************* IMAGEM *************************************/
+.ladoEsquerdo{
+    width: 50%;
+    padding: 10px;
+
+    img{
+       width: 100%;
+       height: auto;
+
+       border-radius: 8px;
+
+       transition: 0.3s;
+
+        &:hover{
+            transform: scale(1.04);
+            transition: 0.3s;
         }
 
     }
 
-    span{
-        display: flex;
+}
+
+/************************************* DESCRIÇÃO *************************************/
+.ladoDireito{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    padding: 10px;
+    gap: 10px;
+
+    width: 50%;
+
+    /*background-color: #f5c518;*/
+
+    h3{
+        font-size: 17px;
+
+    }
+
+    a{
+        color: darkred;
+
+        /*text-decoration: underline;*/
+        transition: 0.4s;
+
+        font-size: 16px;
+
+        margin-right: 5px;
+
+        &:hover{
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    a + a::before{
+        content: " · ";
+        color: darkred;
+    }
+
+    h4{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .sinopse{
+        display: block;
+
+        width: 100%;
+        height: auto;
+
         justify-content: center;
-        align-items: center;
-        color: darkred;
-        margin-left: 35px;
-    }
 
-    span:hover{
-        color: white;
-        opacity: 0.9;
-    }
+        box-sizing: border-box;
 
-    a{
-        font-size: 35px;
-        font-family: "Yu Gothic UI Semibold";
-        cursor: pointer;
-        text-decoration: none;
-        color: white;
-        /*margin-left: 35px;*/
-        letter-spacing: 1px;
+        padding: 10px;
+
+        overflow-y: auto;
 
     }
-
-}
-
-.banner{
-    display: flex;
-    /*align-items: flex-start;*/
-    flex-direction: column;
-    padding: 15px 0 10px 35px;
-    /*background-color: darkred;*/
-    color: darkgray;
-    /*padding: 50px;*/
-    font-size: 20px;
-}
-
-.container{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    /*background-color: rosybrown;*/
-    width: 100%;
-    /*margin: 50px*/
-    padding: 30px 0 5px 0;
-}
-
-.item{
-    display: flex;
-    /*background-color: blueviolet;*/
-    width: 600px;
-    height: 600px;
-
-    a{
-        text-decoration: none;
-    }
-}
-
-.titulo-filme{
-    display: flex;
-    width: 600px;
-    height: 10%;
-    justify-content: center;
-    align-items: center;
-    font-family: "Yu Gothic UI Semibold";
-    font-size: 28px;
-    border-bottom: rgb(0, 0, 0, 0.1) solid;
-    background-color: darkred;
-    color: oklch(13% 0.028 261.692);
-
-}
-
-.titulo-filme:hover{
-    color: white;
-    opacity: 0.9;
-}
-
-.titulo-li{
-    display: flex;
-    justify-content: center;
-    gap: 23px;
-    padding: 0 0 0 0;
-    color: oklch(13% 0.028 261.692);
-    background-color: oklch(44.2% 0.017 285.786);
-    /*background-color: oklch(44.2% 0.017 285.786);*/
-    /*border-bottom: rgb(0, 0, 0, 0.1) solid;*/
-    font-size: 15px;
-    height: 19px;
-}
-
-.conteudo-filme{
-    display: flex;
-    justify-content: space-between;
-}
-
-figure{
-    display: flex;
-    justify-content: flex-start;
-}
-
-.left-img{
-    display: flex;
-    height: 460px;
-}
-
-.lado-direito{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    /*background-color: orange;*/
-    background-color: oklch(44.2% 0.017 285.786)
-}
-
-.lado-direito-ficha{
-    border-bottom: rgb(0, 0, 0, 0.1) solid;
-    width: 100%;
-    height: 109px;
-}
-
-.ficha-tecnica{
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    height: 45%;
-    align-items: center;
-    border-top: rgb(0, 0, 0, 0.1) solid;
-
-    a{
-        /*color: oklch(37.9% 0.146 265.522);*/
-        color: darkred;
-        gap: 2px;
-        font-size: 11pt;
-        margin-left: 6px;
-    }
-
-    a:hover{
-        text-decoration: underline;
-        cursor: pointer;
-        color: white;
-    }
-}
-
-h2{
-    /*border-bottom: rgb(0, 0, 0, 0.1) solid;*/
-    display: flex;
-    justify-content: center;
-    width: 100%; /*ocupa toda largura da classe lado direito*/
-    height: 35px;
-    text-align: center;
-    /*background-color: darkred;*/
-    padding-top: 10px;
-    font-size: 30px;
-}
-
-.sinopse{
-    display: block;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    width: 100%;
-    height: 303px;
-    justify-content: end;
-    box-sizing: border-box ; /*nao deixa o padding alterar a largura e coloca a descrição embaixo da sinopse*/
-    padding: 12px;
-    border-bottom: rgb(0, 0, 0, 0.1) solid;
 
     p{
         font-family: "Arial", sans-serif;
@@ -209,48 +161,83 @@ h2{
         font-size: 11pt;
         text-align: justify;
         line-height: 1.5;
-        /*text-indent: 1.5cm;*/
-
 
     }
 
 }
 
-.sinopse:hover{
-    overflow-y: auto;
-}
+/************************************* RODAPE *************************************/
+.rodape{
 
-.rodape-card{
     display: flex;
-    justify-content: flex-start;
-    gap: 18px;
-    align-items: center;
-    height: 11%;
-    background-color: darkred;
-    /*border-top: rgb(0, 0, 0, 0.1) solid;*/
+    gap: 10px;
 
-    h4{
-        font-family: "Arial", sans-serif;
-        color: oklch(13% 0.028 261.692);
-        font-size: 15pt;
-        line-height: 1.5;
-        margin-left: 25px;
-    }
+    background-color: oklch(44.2% 0.017 285.786);
+
 
     a img{
         width: 35px;
         height: 35px;
         border-radius: 50%;
+        opacity: 0.8;
 
     }
 
     a img:hover{
-        opacity: 0.5;
+        opacity: 1;
+        transition: .4s;
+        transform: scale(1.2);
 
     }
+
+    h5{
+        color: oklch(13% 0.028 261.692);
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        padding: 10px;
+
+        font-size: 25px;
+    }
+
 }
 
+hr{
+    border: none;
+    background-color: gray;
+    height: 1px;
+}
 
+/************************************* MEDIA QUERY *************************************/
+@media(max-width:1400px){
+
+    .conteudo{
+
+        flex-wrap:wrap;
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    .conteudo-card{
+
+        flex-direction:column;
+
+    }
+
+    .ladoEsquerdo,
+
+    .ladoDireito{
+
+        width:100%;
+
+    }
+
+}
 
 
 
