@@ -19,7 +19,7 @@ const filmes = [
             "John Adams"
         ],
 
-        imagem: "../css/images/motherOfFlies.png",
+        imagem: "css/images/motherOfFlies.png",
 
         sinopse:
             "Quando uma jovem se depara com um diagnóstico mortal, ela busca a magia negra de uma bruxa da floresta, mas toda cura tem um custo.",
@@ -43,7 +43,7 @@ const filmes = [
             "Mark Coles Smith"
         ],
 
-        imagem:"../css/images/weBuryDead.png",
+        imagem:"css/images/weBuryDead.png",
 
         sinopse:
             "Ava, uma mulher desesperada cujo marido desapareceu, se junta a uma \"unidade de recuperação corporal\", mas sua busca toma um rumo assustador quando os corpos que ela está enterrando começam a dar sinais de vida."
@@ -68,7 +68,7 @@ const filmes = [
             "Isabel May"
         ],
 
-        imagem:"../css/images/panico7.png",
+        imagem:"css/images/panico7.png",
 
         sinopse:
             "Quando um novo Ghostface surge na pacata cidade onde Sidney Prescott reconstruiu sua vida, seus medos mais sombrios se tornam reais enquanto sua filha se torna o próximo alvo do assassino."
@@ -92,7 +92,7 @@ const filmes = [
             "Liam Neeson"
         ],
 
-        imagem:"../css/images/alertaApocalipse.png",
+        imagem:"css/images/alertaApocalipse.png",
 
         sinopse: "Um fungo armazenado em uma instalação do governo sai e causa estragos no mundo."
     },
@@ -114,7 +114,7 @@ const filmes = [
             "Marc Menchaca"
         ],
 
-        imagem:"../css/images/frioDaMorte.png",
+        imagem:"css/images/frioDaMorte.png",
 
         sinopse: "Uma pescadora viúva que se vê presa em uma tempestade de neve em Minnesota interrompe o sequestro de uma adolescente, ela logo percebe que é a única esperança da jovem vítima."
     },
@@ -138,7 +138,7 @@ const filmes = [
             "Freddie Gibbs"
         ],
 
-        imagem:"../css/images/nightPatrol.png",
+        imagem:"css/images/nightPatrol.png",
 
         sinopse: "Um policial de Los Angeles descobre que um grupo de trabalho local está escondendo um segredo que coloca em risco os vizinhos de seu bairro de infância."
     },
@@ -161,7 +161,7 @@ const filmes = [
             "Troy Kotsur"
         ],
 
-        imagem:"../css/images/oPrimata.png",
+        imagem:"css/images/oPrimata.png",
 
         sinopse: "De volta da faculdade, Lucy se reúne com sua família, incluindo seu chimpanzé Ben. Ben fica com raiva durante uma festa na piscina e se torna agressivo. Lucy e seus amigos se barricam na piscina, inventando maneiras de sobreviver."
     },
@@ -183,7 +183,7 @@ const filmes = [
             "Beverly D'Angelo"
         ],
 
-        imagem: "../css/images/sleepWalker.png",
+        imagem: "css/images/sleepWalker.png",
 
         sinopse: "Após perder a filha em um acidente de carro que deixou seu marido abusivo em coma, uma mãe em luto enfrenta visões perturbadoras que confundem os limites entre realidade e pesadelo."
     },
@@ -207,7 +207,7 @@ const filmes = [
             "Connor Newall"
         ],
 
-        imagem:"../css/images/temploDosOssos.png",
+        imagem:"css/images/temploDosOssos.png",
 
         sinopse: "O Dr. Kelson se vê envolvido em um novo e chocante relacionamento com consequências que podem mudar o mundo como ele o conhece. Enquanto isso, Jimmy Crystal, o líder de uma seita, instiga medo e violência por onde passa."
     },
@@ -231,7 +231,7 @@ const filmes = [
             "Ljiljana Velimirov"
         ],
 
-        imagem:"../css/images/terrorSilentHill.png",
+        imagem:"css/images/terrorSilentHill.png",
 
         sinopse: "Quando uma carta misteriosa o chama de volta a Silent Hill em busca de seu amor perdido, James encontra uma cidade outrora reconhecível e se depara com figuras aterrorizantes, tanto familiares quanto novas."
     },
@@ -254,7 +254,7 @@ const filmes = [
             "Gemma Ward"
         ],
 
-        imagem:"../css/images/osEstranhos.png",
+        imagem:"css/images/osEstranhos.png",
 
         sinopse: "Kristen McKay e James Hoyt estão numa remota casa de veraneio, mas o seu descanso é interrompido quando três estranhos invadem o local, mostrando sentir prazer ao aterrorizá-los."
     },
@@ -277,7 +277,7 @@ const filmes = [
             "Sky Yang"
         ],
 
-        imagem:"../css/images/oSomDaMorte.png",
+        imagem:"css/images/oSomDaMorte.png",
 
         sinopse: "Um grupo de estudantes desajustados do ensino médio se depara com um objeto amaldiçoado, um antigo apito mortal asteca. Eles descobrem que, ao soarem o apito e ouvirem o som aterrorizante que ele emite, suas futuras mortes os assombrarão"
     },
@@ -298,7 +298,7 @@ const filmes = [
             "Catherine Lough Haggquist"
         ],
 
-        imagem:"../css/images/presencaOculta.png",
+        imagem:"css/images/presencaOculta.png",
 
         sinopse: "Dois policiais investigam uma disputa doméstica e há um tiroteio acidental. Não querendo ser crucificados pelo público, os policiais tentam encobrir isso - apenas para descobrir que as câmeras não são as únicas coisas que os observam."
     },
@@ -322,7 +322,7 @@ const filmes = [
             "Birkett Turton"
         ],
 
-        imagem:"../css/images/paraSempreMedo.png",
+        imagem:"css/images/paraSempreMedo.png",
 
         sinopse: "Em uma cabana isolada, um casal celebra seu aniversário de casamento. O que deveria ser um momento romântico se transforma em terror quando forças sombrias emergem, revelando segredos obscuros do local"
     },

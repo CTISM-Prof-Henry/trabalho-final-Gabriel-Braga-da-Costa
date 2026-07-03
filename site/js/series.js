@@ -16,7 +16,7 @@ const series = [
             "Tiphaine Daviot"
         ],
 
-        imagem: "../css/images/marianne.png",
+        imagem: "css/images/marianne.png",
 
         sinopse: "Quando uma famosa escritora de horror retorna à sua cidade natal, ela descobre que o espírito maligno que atormenta seus sonhos também está lá na vida real."
     },
@@ -38,7 +38,7 @@ const series = [
             "Henry Thomas"
         ],
 
-        imagem: "../css/images/aMaldicaoHill.png",
+        imagem: "css/images/aMaldicaoHill.png",
 
         sinopse: "Uma família fraturada confronta memórias assombradas de sua antiga casa e os eventos aterrorizantes que os expulsaram dela."
     },
@@ -60,7 +60,7 @@ const series = [
             "Kristin Lehman"
         ],
 
-        imagem: "../css/images/missaDaNoite.png",
+        imagem: "css/images/missaDaNoite.png",
 
         sinopse: "A história se passa em uma ilha isolada povoada por uma pequena comunidade que já enfrenta algumas cisões internas e se vê ainda mais dividida com a volta de um jovem desafortunado e a chegada de um padre carismático."
     },
@@ -82,7 +82,7 @@ const series = [
             "Evan Jonigkeit"
         ],
 
-        imagem: "../css/images/arquivo81.png",
+        imagem: "css/images/arquivo81.png",
 
         sinopse: "Um arquivista é contratado para recuperar fitas de vídeo danificadas e fica obcecado em resolver um mistério envolvendo a diretora desaparecida e uma seita demoníaca."
 
@@ -105,7 +105,7 @@ const series = [
             "Mitch Pileggi"
         ],
 
-        imagem: "../css/images/arquivoX.png",
+        imagem: "css/images/arquivoX.png",
 
         sinopse: "Dois agentes do FBI, Fox Mulder, quem acredita e Dana Scully a cética, investigam o insólito e inexplicável."
 
@@ -128,7 +128,7 @@ const series = [
             "Stellan Skarsgård"
         ],
 
-        imagem: "../css/images/chernobyl.png",
+        imagem: "css/images/chernobyl.png",
 
         sinopse: "Minissérie em cinco partes que conta a história do pior acidente causado pelo homem na história, o desastre da Usina Nuclear de Chernobyl."
 
