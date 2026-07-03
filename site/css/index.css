@@ -1,14 +1,18 @@
 .carrossel{
-    width: 70.5%;
-    overflow-x: auto; /*cria a barra de scroll dentro da pagina*/
     display: flex;
+    width: 70.5%; /*limita o tamanho do carrossel*/
+    overflow-x: auto; /*cria a barra de scroll dentro da pagina*/
+
     gap: 1.5em;
     margin: 2.5em auto; /*centraliza o carrosel*/
+
     /*background-color: oklch(37% 0.013 285.805);*/
     border-radius: 15px;
+
     scroll-behavior: smooth;
-    anchor-name: --carrossel; /*define uma ancora*/
     scroll-snap-type: x mandatory; /*pra qual lado o carrosel vai girar*/
+
+    anchor-name: --carrossel; /*define uma ancora*/
 
 }
 
@@ -17,19 +21,24 @@
     display: none;
 }
 
-/*cria o botão para mover o card*/
+/************ cria o botão para mover o card (direito) ************/
 .carrossel::scroll-button(right), .carrossel::scroll-button(left) {
     content: '→';
+
     border: none;
     background-color: darkred;
+
     font-size: 3rem;
     color: white;
-    font-family: Consolas;
+    font-family: Consolas, Arial, sans-serif;
+
     height: 60px;
     width: 60px;
+
     border-radius: 50%;
     padding-bottom: .1em; /*centralzia a seta*/
     cursor: pointer;
+
     position: fixed;
     position-anchor: --carrossel; /*posição que a ancora vai ter*/
     position-area: right center; /*posição relativa a ancora*/
@@ -37,18 +46,20 @@
 
 }
 
-/*cria o botão para mover o card*/
+/************ cria o botão para mover o card (esquerdo) ************/
 .carrossel::scroll-button(left) {
     content: '←';
     position-area: left center; /*posição relativa a ancora*/
     translate: 50%; /*posicao da seta*/
 }
 
+/************ BOTAO DESATIVADO ************/
 .carrossel::scroll-button(right):disabled, .carrossel::scroll-button(left):disabled {
     opacity: 0.5;
     cursor: auto;
 }
 
+/************ CARDS DO CARROSSEL ************/
 .card-content{
     scroll-snap-align: start; /*força o começo no próximo card*/
     flex: 0 0 20em;
@@ -58,6 +69,7 @@
     /*text-align: center; !*alinha no centro*!*/
     align-content: center; /*alinha no meio*/
     transform: translateY(10px);/*efeito de zoom no card*/
+
 
 }
 
@@ -81,14 +93,14 @@
     transition: all .6s;
 }
 
-h2 a {
-    color: oklch(13% 0.028 261.692);
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    padding: 0 0 0 10px;
-    font-size: 25px;
-    background-color: blueviolet;
+/*h2 a {*/
+/*    color: darkred;*/
+/*    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;*/
+/*    padding: 0 0 0 10px;*/
+/*    font-size: 25px;*/
+/*    background-color: blueviolet;*/
 
-}
+/*}*/
 
 
 .banner-top-filmes{
@@ -206,7 +218,7 @@ h2 a {
                     display: flex;
                     justify-content: flex-start;
                     font-size: 15px;
-                    letter-spacing: 0.5px;
+                    letter-spacing: .5px;
 
                 }
 
@@ -252,3 +264,38 @@ h2 a {
 
 
     }
+
+@media (max-width: 500px){
+    .card{
+        flex: 0 0 100%;
+
+    }
+
+    .banner-top-filmes{
+        width: 100%;
+        padding: 15px;
+        margin: 20px auto;
+        height: auto;
+    }
+
+    .cards-container{
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+
+        width:100%;
+        max-width:600px;
+        flex-direction:column;
+
+    }
+
+    .card img{
+
+        width:100%;
+        height:auto;
+
+    }
+}

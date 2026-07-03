@@ -22,6 +22,8 @@
     height: 100%;
 
     background-color: dimgray;
+
+    border-radius: 10px;
 }
 
 /************************************* TITULO *************************************/
@@ -39,8 +41,13 @@
     height: 10%;
 
     background-color: darkred;
+    border-top-right-radius: 10px ;
+    border-top-left-radius: 10px ;
+
 
     color: oklch(13% 0.028 261.692);
+
+    transition: .4s;
 
     &:hover{
         color: white;
@@ -84,11 +91,11 @@
 
        border-radius: 8px;
 
-       transition: 0.3s;
+       transition: 0.5s;
 
         &:hover{
             transform: scale(1.04);
-            transition: 0.3s;
+            transition: 0.5s;
         }
 
     }
@@ -140,7 +147,7 @@
     }
 
     .sinopse{
-        display: block;
+        flex: 1;
 
         width: 100%;
         height: auto;
@@ -170,24 +177,36 @@
 .rodape{
 
     display: flex;
-    gap: 10px;
+    align-items: center;
+    /*width: 100%;*/
+    margin-top: auto;
+    padding: 10px;
 
-    background-color: oklch(44.2% 0.017 285.786);
+    /*background-color: oklch(44.2% 0.017 285.786);*/
+    background-color: oklch(39.6% 0.141 25.723);
 
 
     a img{
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
+
         border-radius: 50%;
         opacity: 0.8;
+        transition: .4s;
 
     }
 
     a img:hover{
         opacity: 1;
         transition: .4s;
-        transform: scale(1.2);
+        transform: scale(1.15);
 
+
+
+    }
+
+    a + a::before{
+        opacity: 0;
     }
 
     h5{
@@ -197,9 +216,10 @@
         justify-content: flex-start;
         align-items: center;
 
-        padding: 10px;
+        /*padding: 25px;*/
+        gap: 10px;
+        font-size: 20px;
 
-        font-size: 25px;
     }
 
 }
